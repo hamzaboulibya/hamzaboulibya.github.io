@@ -64,6 +64,28 @@ body {
 .navbar-link:hover {
     background-color: #444;
 }
+/* Styles pour la barre de navigation sur les écrans plus petits */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    margin-bottom: 20px;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+  }
+
+  .navbar-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
 
 /* Styles pour éviter le chevauchement du contenu */
 body {
