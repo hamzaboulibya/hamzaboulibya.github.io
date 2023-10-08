@@ -1,0 +1,625 @@
+/* Réinitialisation des styles de base */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: #b3a0a0;
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-logo-link:hover {
+    color: #ccc;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-right: 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #444;
+}
+
+/* Styles pour éviter le chevauchement du contenu */
+body {
+    padding-top: 70px;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Styles pour la section Accueil */
+.home-section {
+    text-align: center;
+    padding: 100px 0;
+    min-height: 650px; /* Augmentez la hauteur souhaitée ici */
+    /* background-image:url("home1.jpg"); */
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxq2HXgYml7TdVjiolE_YbKJoyzKEqdXm1XFsYRh_q7Q&s"); */
+    /* background-image: url("https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?size=626&ext=jpg"); */
+   /* background-image: url("https://camo.githubusercontent.com/e0bc4ada1442b545cf2c80b84efdca45f4106c3824a472818bc7a59735533cbd/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f797555724456324441744252764974485a324676584d6b50624852354e4574346b586270703864674b2d72396a49392d6972503139474a62324376644252596d7934314b47344278467532486f6439477a64674763343669596d6d37417334624e4e73632d4a503776597759386431427a48675a64764b5237483478744c4d32307a5239676e30504a452d6e5155306e617670395868307048633343702d436a5955454e4e3764575a334e4a69773843694846454a6e374d6330756c5f41"); */
+    background-size: auto 800px; /* Ajustez la hauteur souhaitée ici */
+    background-position: center;
+    color: #474545;
+}
+
+
+/* .home-section {
+    text-align: center;
+    padding: 100px 0;
+    min-height: 400px;
+    
+    background-image: url(notebook.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #533b3b;
+} */
+
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* .home-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+} *//* Titre de la page d'accueil */
+
+
+
+/* Titre de la page d'accueil */
+.home-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Your New Font', sans-serif; /* Remplacez 'Your New Font' par la police de votre choix */
+  }
+  
+  /* Description de la page d'accueil */
+  .home-description {
+    font-size: 1.8rem; /* Augmentez la taille de la police */
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555; /* Utilisez une couleur légèrement plus foncée pour le texte */
+    line-height: 1.6;
+    font-family: 'Helvetica', sans-serif; /* Exemple de police de caractères */
+  }
+  
+
+.home-button {
+    display: inline-block;
+    background-color: #474545;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.home-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* Styles pour la section À propos */
+.about {
+    padding: 100px 0;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+.about .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__img img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.about__subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Styles pour la section Projets */
+/* Section Projets */
+/* Section Projets */
+.projects-section {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .project-details {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .project-card.active .project-details {
+    display: block;
+  }
+  
+  /* Styles pour les médias de petite taille */
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .project-card {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    opacity: 0.7;
+  }
+  
+
+/* Styles pour la section Contact */
+.contact {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+    color: #333;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact__form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact__input {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact__input::placeholder {
+    color: #999;
+}
+
+.contact__input:focus {
+    border-color: #2b2828;
+}
+
+.contact__textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.contact__textarea::placeholder {
+    color: #999;
+}
+
+.contact__textarea:focus {
+    border-color: #3f3232;
+}
+
+.contact__button {
+    display: block;
+    width: 100%;
+    background-color: #2b2828;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__button:hover {
+    background-color: #2b2828;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+.footer__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer__social {
+    margin-bottom: 1rem;
+}
+
+.footer__icon {
+    font-size: 5.5rem;
+    color: #fff;
+    margin: 0 0.5rem;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.footer__icon:hover {
+    font-size: 3rem;
+    color: #ccc;
+}
+
+/* Styles pour le bouton "Retour en haut" */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2b2828;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    opacity: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+    background-color: rgba(41, 29, 29, 0.89);
+}
+
+/* Masquez le bouton lorsque la page est au début */
+.scroll-top-btn.hide {
+    display: none;
+}
+
+/* Styles pour la section Formations et Certifications */
+/* Section Certificats */
+.education-section {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .certificates-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .certificate-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .certificate-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
+  
+  .certificate-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .certificate-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .certificate-card {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .certificate-card:hover {
+    opacity: 0.7;
+  }
+  
+  
+  /* Styles pour les médias de petite taille */
+  
+  @media (max-width: 768px) {
+    .certificates-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+
+/* Styles pour le pied de page */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+.footer__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer__social {
+    margin-bottom: 1rem;
+}
+
+.footer__icon {
+    font-size: 5.5rem;
+    color: #fff;
+    margin: 0 0.5rem;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.footer__icon {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.footer__icon:hover {
+    font-size: 5.5rem;
+    color: #ccc;
+}
+
+
+
+
+/* ///ghi zayd hada wsf //// */
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles pour la section de contact */
+.contact-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+} */
+
+/* .contact-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    color: #333;
+} */
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+} */
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info ul li strong {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info ul li a i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.contact-link {
+    color: #333;
+    font-weight: bold;
+}

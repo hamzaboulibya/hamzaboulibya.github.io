@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamza Boulibya - Data Scientist Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- Barre de navigation -->
+<nav class="navbar">
+  <div class="navbar-logo">
+    <a href="#home" class="navbar-logo-link">Hamza Boulibya</a>
+  </div>
+  <ul class="navbar-list">
+    <li class="navbar-item"><a href="#home" class="navbar-link">Accueil</a></li>
+    <li class="navbar-item"><a href="#about" class="navbar-link">À propos</a></li>
+    <li class="navbar-item"><a href="#projects" class="navbar-link">Projets</a></li>
+    <li class="navbar-item"><a href="#certificates" class="navbar-link">Certificats</a></li>
+    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!--     kkk -->
+
+<!-- Section Home -->
+<section class="home-section" id="home">
+  <div class="home-content">
+    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Hamza Boulibya</span><br> Data Scientist</h1>
+    <p class="home-description">Analyzing data and creating insights</p>
+
+    <!-- <h1 class="home-title">Bienvenue sur mon Portfolio</h1> -->
+    <p class="home-description">Harnessing the Potential of Data for a Better Tomorrow </p>
+    <p class="home-description">" data is the new oil "</p>
+   
+    <a href="#contact" class="home-button">Contactez-moi</a>
+    <a href="#contact" class="home-button">Download Resume</a>
+
+  </div>
+</section>
+
+<!-- Section À propos -->
+<section class="about section" id="about">
+  <h2 class="section-title">À propos</h2>
+  <div class="about__container bd-grid">
+    <div class="about__img">
+      <img src="ana.png" alt="">
+    </div>
+    <div>
+      <h2 class="about__subtitle"> Hamza Boulibya </h2>
+      <p class="about__text">Je suis un data scientist passionné par l'utilisation des données pour résoudre des problèmes complexes et créer de nouvelles opportunités. J'ai une solide expertise dans les domaines du machine learning, du traitement du langage naturel et de la visualisation des données. Je suis également un excellent communicant et je suis capable de vulgariser des concepts techniques complexes..</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section Projets -->
+<section class="projects-section section" id="projects">
+  <h2 class="section-title">Projets</h2>
+  <div class="projects-container">
+    <div class="project-card" onclick="toggleProjectDetails(this)">
+      <img src="home.jpg" alt="Project 1">
+      <h3 class="project-title">Project 1</h3>
+      <p class="project-description">Description of Project 1 goes here.</p>
+      <div class="project-details">
+        <p>Additional details or links can go here.</p>
+        <p>Description of the project.</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+    </div>
+    <div class="project-card" onclick="toggleProjectDetails(this)">
+      <img src="home.jpg" alt="Project 1">
+      <h3 class="project-title">Project 1</h3>
+      <p class="project-description">Description of Project 1 goes here.</p>
+      <div class="project-details">
+        <p>Additional details or links can go here.</p>
+        <p>Description of the project.</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+    </div>
+    <div class="project-card" onclick="toggleProjectDetails(this)">
+      <img src="home.jpg" alt="Project 1">
+      <h3 class="project-title">Project 1</h3>
+      <p class="project-description">Description of Project 1 goes here.</p>
+      <div class="project-details">
+        <p>Additional details or links can go here.</p>
+        <p>Description of the project.</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+    </div>
+    <div class="project-card" onclick="toggleProjectDetails(this)">
+        <img src="home.jpg" alt="Project 1">
+        <h3 class="project-title">Project 1</h3>
+        <p class="project-description">Description of Project 1 goes here.</p>
+        <div class="project-details">
+          <p>Additional details or links can go here.</p>
+          <p>Description of the project.</p>
+          <a href="#" class="button">View Project</a>
+        </div>
+      </div>
+      <div class="project-card" onclick="toggleProjectDetails(this)">
+        <img src="home.jpg" alt="Project 1">
+        <h3 class="project-title">Project 1</h3>
+        <p class="project-description">Description of Project 1 goes here.</p>
+        <div class="project-details">
+          <p>Additional details or links can go here.</p>
+          <p>Description of the project.</p>
+          <a href="#" class="button">View Project</a>
+        </div>
+      </div>
+    <div class="project-card" onclick="toggleProjectDetails(this)">
+      <img src="home.jpg" alt="Project 1">
+      <h3 class="project-title">Project 1</h3>
+      <p class="project-description">Description of Project 1 goes here.</p>
+      <div class="project-details">
+        <p>Additional details or links can go here.</p>
+        <p>Description of the project.</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+    </div>
+    <!-- Ajoutez d'autres projets ici -->
+  </div>
+</section>
+
+<!-- Section Certificats -->
+<section class="education-section" id="certificates">
+  <h2 class="section-title">Certificats</h2>
+  <div class="certificates-container">
+    <div class="certificate-card" onclick="window.location.href='lien_vers_le_certificat1.html'">
+      <img src="home.jpg" alt="Certificat 1">
+      <h3>Nom du certificat 1</h3>
+    </div>
+    <div class="certificate-card" onclick="window.location.href='lien_vers_le_certificat2.html'">
+      <img src="home1.jpg" alt="Certificat 2">
+      <h3>Nom du certificat 2</h3>
+    </div>
+  
+    <div class="certificate-card" onclick="window.location.href='lien_vers_le_certificat1.html'">
+      <img src="home.jpg" alt="Certificat 1">
+      <h3>Nom du certificat 1</h3>
+    </div>
+    <div class="certificate-card" onclick="window.location.href='lien_vers_le_certificat2.html'">
+      <img src="home1.jpg" alt="Certificat 2">
+      <h3>Nom du certificat 2</h3>
+    </div>
+    <div class="certificate-card" onclick="window.location.href='lien_vers_le_certificat1.html'">
+      <img src="home.jpg" alt="Certificat 1">
+      <h3>Nom du certificat 1</h3>
+    </div>
+    <div class="certificate-card" onclick="window.location.href='lien_vers_le_certificat2.html'">
+      <img src="home1.jpg" alt="Certificat 2">
+      <h3>Nom du certificat 2</h3>
+    </div>
+
+    <div class="certificate-card" onclick="window.location.href='lien_vers_le_certificat1.html'">
+      <img src="home.jpg" alt="Certificat 1">
+      <h3>Nom du certificat 1</h3>
+    </div>
+    <div class="certificate-card" onclick="window.location.href='lien_vers_le_certificat2.html'">
+      <img src="home1.jpg" alt="Certificat 2">
+      <h3>Nom du certificat 2</h3>
+    </div>
+    <!-- Ajoutez d'autres certificats ici -->
+  </div>
+  
+</section>
+
+
+<!-- Section Contact -->
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact__container bd-grid">
+    <form action="mailto:hamzaboulibya1@gmail.com" class="contact__form">
+      <input type="text" placeholder="Name" class="contact__input" required>
+      <input type="email" placeholder="Email" class="contact__input" required>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact__input" required></textarea>
+      <input type="submit" value="Send" class="contact__button button">
+    </form>
+  </div>
+</section>
+
+
+
+
+<!-- ////ghi zayda wsf /// -->
+
+
+
+
+<section class="contact-section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-info">
+        <h3>Informations de contact</h3>
+        <ul>
+            <li>
+                <!-- <strong>Nom :</strong>  -->
+                Hamza Boulibya
+            </li>
+            <li>
+                <!-- <strong>Adresse e-mail :</strong> -->
+                <a href="mailto:hamza.boulibya@usmba.ac.ma">
+                    <i class="fas fa-envelope"></i>
+                    hamza.boulibya@usmba.ac.ma
+                </a>
+            </li>
+            <li>
+                <!-- <strong>Numéro de téléphone :</strong> -->
+                <a href="tel:+2120624566906">
+                    <i class="fas fa-phone"></i>
+                    +212 062 456 6906
+                </a>
+            </li>
+            <li>
+                <!-- <strong>LinkedIn :</strong> -->
+                <a href="https://www.linkedin.com/in/hamza-boulibya/" target="_blank">
+                    <i class="fab fa-linkedin"></i> Mon profil LinkedIn
+                </a>
+            </li>
+            <li>
+                <!-- <strong>GitHub :</strong> -->
+                <a href="https://github.com/hamzaboulibya" target="_blank">
+                    <i class="fab fa-github"></i> Mon profil GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Pied de page -->
+<footer class="footer">
+  <p class="footer__title">Hamza Boulibya - Data Scientist</p>
+  <div class="footer__social">
+    <a href="https://www.linkedin.com/in/hamzaboulibya" class="social-link" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+    <a href="https://twitter.com/hamzaboulibya" class="social-link" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
+    <a href="https://github.com/hamzaboulibya" class="social-link" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
+    <!-- -------------------------------------- -->
+    <div class="home__social">
+        <!-- Add links to your social profiles -->
+        <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+        <a href="#" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
+        <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+    </div>
+
+</div>
+  <p class="footer__copy">&copy; Hamza Boulibya</p>
+</footer>
+
+<!-- Ajoutez le bouton "Retour en haut" -->
+<button id="scrollTopButton" class="scroll-top-btn"><i class='bx bx-chevron-up'></i></button>
+
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  // Fonction pour ajouter une classe d'animation à l'élément cible
+  function addAnimationToElement(element, animationClass) {
+    element.classList.add(animationClass);
+
+    // Supprimer la classe d'animation après un délai (par exemple, 1 seconde)
+    setTimeout(() => {
+      element.classList.remove(animationClass);
+    }, 1000);
+  }
+
+  // Fonction pour afficher/masquer les détails du projet au clic
+  function toggleProjectDetails(projectCard) {
+    const projectDetails = projectCard.querySelector(".project-details");
+    projectDetails.style.display = projectDetails.style.display === "block" ? "none" : "block";
+  }
+
+  // Événement pour tous les liens de la barre de navigation
+  const navbarLinks = document.querySelectorAll(".navbar-link");
+  navbarLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = event.target.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+      addAnimationToElement(targetElement, "fadeInUp");
+    });
+  });
+
+  // Événement pour la soumission du formulaire
+  const contactForm = document.getElementById("contact-form"); // Remplacez "contact-form" par l'ID de votre formulaire
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault(); // Empêche le formulaire de se soumettre de manière classique
+    addAnimationToElement(contactForm, "fadeInUp");
+  });
+
+  // Événement pour afficher le bouton "Retour en haut" lors du défilement
+  window.onscroll = function () {
+    const scrollTopButton = document.getElementById("scrollTopButton");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollTopButton.style.display = "block";
+    } else {
+      scrollTopButton.style.display = "none";
+    }
+  };
+
+  // Fonction pour remonter en haut de la page lorsque le bouton "Retour en haut" est cliqué
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  // Événement pour le bouton "Retour en haut"
+  document.getElementById("scrollTopButton").addEventListener("click", scrollToTop);
+
+  // Événement pour afficher/masquer les détails du projet au clic
+  const projectCards = document.querySelectorAll(".project-card");
+  projectCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      toggleProjectDetails(card);
+    });
+  });
+
+
+
+    
+</script>
+
+</body>
+
+</html>
